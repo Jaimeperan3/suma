@@ -1,0 +1,21 @@
+sumaCifras = int(0)
+
+numero = int(input("Favor ingresar el numero:"))
+
+if (numero >= 1000) :
+    
+    numero = numero % 1000
+
+if (numero >= 100) :
+    sumaCifras = sumaCifras + (int(numero/100))
+numero = numero % 100
+
+if (numero >= 10) :
+    sumaCifras = sumaCifras + (int(numero  /10))
+numero = numero % 10
+
+if(numero >0):
+    sumaCifras = sumaCifras + numero
+
+
+    print ("Suma de cifras del numero:" + str(sumaCifras))
